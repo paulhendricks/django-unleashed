@@ -10,8 +10,8 @@ class Post(models.Model):
     slug = models.SlugField(max_length=63, help_text='A label for the URL config.')
     text = models.TextField()
     pub_date = models.DateField('date published', auto_now_add=True)
-    tags = models.ManyToManyField(Tag, related_name='blog posts')
-    startups = models.ManyToManyField(Startup, related_name='blog posts')
+    tags = models.ManyToManyField(Tag, related_name='blog_posts')
+    startups = models.ManyToManyField(Startup, related_name='blog_posts')
 
     def __str__(self):
         return "{}:{}".format(self.title, self.pub_date.strftime('%Y-%m-%d'))
