@@ -1,1 +1,1 @@
-# Django Unleashed:  Notes and Exercises
+# Django Unleashed: Notes and Exercises
